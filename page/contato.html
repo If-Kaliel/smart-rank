@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="../assets/css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <button class="hamburger" aria-label="Abrir menu">=</button>
+        <nav role="navegação" aria-label="Menu principal">
+            <a href="../index.html">Início</a>
+            <a href="./integrantes.html">Equipe</a>
+            <a href="./faq.html">FAQ</a>
+            <a href="./contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <section class="section">
+                <h2>Fale Conosco</h2>
+                <p>Entre em contato com o time do Simple Manager para suporte técnico, dúvidas comerciais ou solicitação
+                    de demonstração.</p>
+
+                <form id="contact-form" aria-label="Formulário de contato">
+                    <div class="form-row">
+                        <label for="name">Nome</label>
+                        <input id="name" name="name" type="text" placeholder="Seu nome" />
+                    </div>
+                    <div class="form-row">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email" placeholder="seu@exemplo.com" />
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Descreva sua solicitação..."></textarea>
+                    </div>
+                    <button type="submit" class="primary">Enviar mensagem</button>
+                    <div id="contact-status" aria-live="polite"></div>
+                </form>
+
+                <nav class="contact-list" aria-label="Redes sociais">
+                    <ul>
+                        <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+
+                </nav>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy;Todos os direitos reservados - 2025.</p>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
