@@ -172,3 +172,34 @@ main.content{
 .cards-grid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); }
 .stat-card { background:#16161b; padding:1rem; border:1px solid #27272f; border-radius:10px; }
 .stat-value { font-size:1.4rem; font-weight:600; margin-top:.35rem; color:#ff1f7d; }
+
+.report-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.report-card {
+    background: #1a1a1a;
+    padding: 1rem;
+    border: 1px solid #27272f;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.btn {
+    background: #ff1f7d;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+}
