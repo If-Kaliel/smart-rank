@@ -101,3 +101,70 @@ main.content{
     margin-bottom: 0.25rem;
 }
 
+.course-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.course-card {
+    display: flex;
+    gap: 1.5rem;
+    background: #1a1a1a;
+    padding: 1rem;
+}
+
+.course-card .thumb {
+    width: 120px;
+    height: 75px;
+    background: #121214;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.course-title {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+}
+
+.course-meta {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: lightgrey;
+    margin-bottom: 0.5rem;
+}
+
+.course-description {
+    font-size: 0.9rem;
+    color: #b8bac1;
+}
+
+.course-status {
+    margin-left: auto;
+    font-size: 0.75rem;
+}
+
+.status {
+    padding: 0.4rem 0.6rem;
+    border-radius: 25px;
+    background: #27272f;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.status.in-progress {
+    color: #ffbb00;
+    background: #3a2e00;
+}
+
+.status.completed {
+    color: #00cc66;
+    background: #00331a;
+}
+
+.status.not-started {
+    color: #888888;
+    background: #222222;
+}
