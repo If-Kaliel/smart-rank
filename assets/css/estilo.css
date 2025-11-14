@@ -9,8 +9,7 @@ html{
 
 body{
     font-family: system-ui, -apple-system, segoe UI,Roboto, "Helvetica Neue", Arial, sans-serif;
-    background: black;
-    color: white;
+    background-color: black;
     min-height: 100vh;
     line-height: 1.6;
     display: flex;
@@ -202,4 +201,8 @@ main.content{
 
 .btn:hover {
     filter: brightness(1.1);
+}
+
+.topbar {
+    position: ;
 }
