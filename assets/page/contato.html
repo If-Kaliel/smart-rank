@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body class="layout">
+    <header class="topbar">
+        <button class="hamburger" id="menuToggle" aria-label="Abrir menu" aria-controls="sideMenu"
+            aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="brand"><a href="/index.html">Inicio</a></div>
+        <div class="top-actions">
+            <a href="./integrantes.html" class="top-link">Equipe</a>
+            <a href="./sobre.html" class="top-link">Sobre</a>
+            <a href="./faq.html" class="top-link">FAQ</a>
+            <a href="./contato.html" class="top-link">Contato</a>
+        </div>
+    </header>
+
+    <aside id="sideMenu" class="drawer" aria-label="Menu principal" hidden>
+        <nav class="drawer-nav">
+            <div class="drawer-section">
+                <h2 class="drawer-heading">Navegação</h2>
+                <ul>
+                    <li><a href="/index.html"></a></li>
+                    <li><a href="./integrantes.html">Equipe</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./carreira.html">Carreira</a></li>
+                    <li><a href="./cursos.html">Cursos</a></li>
+                    <li><a href="./premios.html">Prêmios</a></li>
+                </ul>
+            </div>
+            <div class="drawer-section">
+                <h2 class="drawer-heading">Recursos</h2>
+                <ul>
+                    <li><a href="../index.html#cursos">Cursos</a></li>
+                    <li><a href="../index.html#desempenho">Desempenho</a></li>
+                    <li><a href="../index.html#relatorios">Relatórios</a></li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <section class="section">
+            <h2>Fale com o RH</h2>
+            <form id="contact-form" aria-label="Formulário de contato">
+                <div class="form-row">
+                    <label for="name">Nome</label>
+                    <input id="name" name="name" type="text" placeholder="Seu nome" />
+                </div>
+                <div class="form-row">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="seu@exemplo.com" />
+                </div>
+                <div class="form-row">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Descreva sua solicitação..."></textarea>
+                </div>
+                <button type="submit" class="primary">Enviar mensagem</button>
+                <div id="contact-status" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy;Todos os direitos reservados - Smart Rank 2025</p>
+    </footer>
+</body>
+
+</html>
