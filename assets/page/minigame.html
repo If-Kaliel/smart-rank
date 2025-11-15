@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Minigame — Teste</title>
+    <link rel="stylesheet" href="../css/estiloapp.css">
+    <script src="../js/scriptapp.js" defer></script>
+</head>
+
+<body class="layout">
+    <header class="topbar">
+        <a class="back-link" href="./cursos.html" aria-label="Voltar para Cursos">← Voltar</a>
+        <h1 class="visually-hidden">Minigame — Teste</h1>
+    </header>
+
+    <main class="content">
+        <section class="section quiz-section" aria-labelledby="quiz-title">
+            <h2 id="quiz-title">Teste Rápido — Onboarding Eficiente</h2>
+            <p class="quiz-intro">Responda às perguntas abaixo. Avance para ver o resultado.</p>
+
+            <div class="quiz-progress" role="status" aria-live="polite" aria-atomic="true">
+                <div id="quizProgressLabel">Pergunta 1 de 5</div>
+            </div>
+
+            <form id="quizForm" class="quiz-form" action="#" method="post" novalidate>
+                <fieldset class="quiz-question" data-qid="1">
+                    <legend>1. Qual é o objetivo principal de um processo de onboarding?</legend>
+                    <ul class="options">
+                        <li>
+                            <input type="radio" id="q1a" name="q1" value="a">
+                            <label for="q1a">Acelerar a adaptação do novo colaborador à cultura e às tarefas</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q1b" name="q1" value="b">
+                            <label for="q1b">Reduzir a carga de trabalho da liderança</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q1c" name="q1" value="c">
+                            <label for="q1c">Eliminar a necessidade de treinamento futuro</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q1d" name="q1" value="d">
+                            <label for="q1d">Avaliar o desempenho final do colaborador</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="quiz-question" data-qid="2" hidden>
+                    <legend>2. Qual prática ajuda mais a integrar um novo membro ao time?</legend>
+                    <ul class="options">
+                        <li>
+                            <input type="radio" id="q2a" name="q2" value="a">
+                            <label for="q2a">Isolar tarefas até que domine o básico</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q2b" name="q2" value="b">
+                            <label for="q2b">Designar um mentor e realizar check-ins regulares</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q2c" name="q2" value="c">
+                            <label for="q2c">Atribuir todas as responsabilidades imediatamente</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q2d" name="q2" value="d">
+                            <label for="q2d">Pedir que aprenda sozinho com documentação</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="quiz-question" data-qid="3" hidden>
+                    <legend>3. O que é mais importante medir no fim do onboarding?</legend>
+                    <ul class="options">
+                        <li>
+                            <input type="radio" id="q3a" name="q3" value="a">
+                            <label for="q3a">Satisfação do novo colaborador e alinhamento às expectativas</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q3b" name="q3" value="b">
+                            <label for="q3b">Quantidade de documentos lidos</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q3c" name="q3" value="c">
+                            <label for="q3c">Horas trabalhadas na primeira semana</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q3d" name="q3" value="d">
+                            <label for="q3d">Número de tarefas não concluídas</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="quiz-question" data-qid="4" hidden>
+                    <legend>4. Quais recursos costumam facilitar o aprendizado durante o onboarding?</legend>
+                    <ul class="options">
+                        <li>
+                            <input type="radio" id="q4a" name="q4" value="a">
+                            <label for="q4a">Materiais interativos, checklists e tutoriais práticos</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q4b" name="q4" value="b">
+                            <label for="q4b">Somente longas apresentações teóricas</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q4c" name="q4" value="c">
+                            <label for="q4c">Reuniões sem agenda</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q4d" name="q4" value="d">
+                            <label for="q4d">Demorar a fornecer acessos</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="quiz-question" data-qid="5" hidden>
+                    <legend>5. Com que frequência são recomendados os feedbacks durante os primeiros meses?</legend>
+                    <ul class="options">
+                        <li>
+                            <input type="radio" id="q5a" name="q5" value="a">
+                            <label for="q5a">Feedbacks regulares (semanais ou quinzenais) nos primeiros meses</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q5b" name="q5" value="b">
+                            <label for="q5b">Somente avaliação anual</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q5c" name="q5" value="c">
+                            <label for="q5c">Nunca dar feedback direto</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q5d" name="q5" value="d">
+                            <label for="q5d">Feedbacks apenas no final do onboarding</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <div class="quiz-controls">
+                    <button type="button" id="prevBtn" class="btn" aria-label="Pergunta anterior"
+                        disabled>Anterior</button>
+                    <button type="button" id="nextBtn" class="btn" aria-label="Próxima pergunta">Próxima</button>
+                    <button type="submit" id="submitBtn" class="btn" hidden>Enviar respostas</button>
+                </div>
+            </form>
+
+            <div id="result" class="quiz-result" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; Todos os direitos reservados - Smart Rank 2025</p>
+    </footer>
+</body>
+
+</html>
