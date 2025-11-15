@@ -85,9 +85,9 @@ main.content {
 }
 
 .quick-features li {
-    padding: auto;
+    padding: 0.25rem 0;
     font-size: 1rem;
-    color: white;
+    color: white; /* alterar cor */
 }
 
 .section h2.strong {
@@ -248,6 +248,11 @@ main.content {
     filter: brightness(1.1);
 }
 
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
 .topbar {
     position: sticky;
     top: 0;
@@ -291,14 +296,14 @@ main.content {
     margin-right: 0.5rem;
 }
 
-.hamburguer span {
+.hamburger span {
     height: 3px;
     width: 100%;
-    background: transparent;
+    background: white;
     /* alterar cor */
     display: block;
     border-radius: 3px;
-    transition: 0.4s cubic-bezier(0.5, 0.15, 0.25, 0.9);
+    transition: 0.4s cubic-bezier(0.5, 0.15, 0.25, 0.9), opacity 0.4s cubic-bezier(0.5, 0.15, 0.25, 0.9);
 }
 
 .draw-open .hamburger span:nth-child(1) {
