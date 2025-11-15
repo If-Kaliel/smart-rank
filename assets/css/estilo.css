@@ -27,6 +27,12 @@ img {
     height: auto;
 }
 
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
 a {
     color: #ff1f7d;
     text-decoration: none;
@@ -36,8 +42,12 @@ a:hover {
     text-decoration: underline;
 }
 
-a:focus-visible, .btn:focus-visible, .top-link:focus-visible, .drawer-section ul li a:focus-visible {
-    outline: 2px solid #ff1f7d; /* alterar cor */
+a:focus-visible,
+.btn:focus-visible,
+.top-link:focus-visible,
+.drawer-section ul li a:focus-visible {
+    outline: 2px solid #ff1f7d;
+    /* alterar cor */
     outline-offset: 2px;
     border-radius: 6px;
 }
@@ -88,7 +98,8 @@ main.content {
 .quick-features li {
     padding: 0.25rem 0;
     font-size: 1rem;
-    color: white; /* alterar cor */
+    color: white;
+    /* alterar cor */
 }
 
 .section h2.strong {
@@ -125,7 +136,8 @@ main.content {
     gap: 1.5rem;
     background: #1a1a1a;
     padding: 1rem;
-    border: 1px solid #27272f; /* alterar cor */
+    border: 1px solid #27272f;
+    /* alterar cor */
     border-radius: 10px;
 }
 
@@ -138,9 +150,20 @@ main.content {
     flex-shrink: 0;
 }
 
+.course-card .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .course-title {
     margin: 0 0 0.5rem;
     font-size: 1rem;
+}
+
+.course-card .course-body {
+    flex: 1;
+    min-width: 0;
 }
 
 .course-meta {
@@ -159,6 +182,79 @@ main.content {
 .course-status {
     margin-left: auto;
     font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-end;
+    min-width: 180px;
+}
+
+.course-progress {
+    width: 160px;
+}
+
+.course-progress .progress-label {
+    font-size: 0.7rem;
+    color: lightgray;
+    /* alterar cor */
+    text-align: right;
+    margin-bottom: 0.25rem;
+}
+
+.course-progress .progress-track {
+    position: relative;
+    height: 8px;
+    background: #27272f;
+    /* alterar cor */
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.course-progress .progress-fill {
+    height: 100%;
+    width: var(--progress, 0%);
+    background: #ff1f7d;
+    /* alterar cor */
+    border-radius: inherit;
+    transition: width 0.4s ease;
+}
+
+.course-card:hover {
+    border-color: #383846;
+    /* alterar cor */
+}
+
+
+.progress-fill.p-0 {
+    --progress: 0%;
+}
+
+.progress-fill.p-167 {
+    --progress: 16.666%;
+}
+
+.progress-fill.p-286 {
+    --progress: 28.571%;
+}
+
+.progress-fill.p-333 {
+    --progress: 33.333%;
+}
+
+.progress-fill.p-375 {
+    --progress: 37.5%;
+}
+
+.progress-fill.p-500 {
+    --progress: 50%;
+}
+
+.progress-fill.p-667 {
+    --progress: 66.666%;
+}
+
+.progress-fill.p-100 {
+    --progress: 100%;
 }
 
 .status {
@@ -202,7 +298,8 @@ main.content {
     font-size: 1.4rem;
     font-weight: 600;
     margin-top: .35rem;
-    color: #ff1f7d; /* alterar cor */
+    color: #ff1f7d;
+    /* alterar cor */
 }
 
 .report-list {
@@ -232,18 +329,18 @@ main.content {
     padding: 0.6rem 1rem;
     font-size: 0.8rem;
     letter-spacing: 0.5px;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .btn {
-  cursor: pointer;
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  padding: 0.6rem 1rem;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
-  border-radius: 6px;
+    cursor: pointer;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
 }
 
 
@@ -309,16 +406,19 @@ main.content {
     transition: 0.4s cubic-bezier(0.5, 0.15, 0.25, 0.9), opacity 0.4s cubic-bezier(0.5, 0.15, 0.25, 0.9);
 }
 
-.draw-open .hamburger span:nth-child(1), .drawer-open .hamburger span:nth-child(1) {
+.draw-open .hamburger span:nth-child(1),
+.drawer-open .hamburger span:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
 }
 
-.draw-open .hamburger span:nth-child(2), .drawer-open .hamburger span:nth-child(2) {
+.draw-open .hamburger span:nth-child(2),
+.drawer-open .hamburger span:nth-child(2) {
     opacity: 0;
     transform: scaleX(0.3);
 }
 
-.draw-open .hamburger span:nth-child(3), .drawer-open .hamburger span:nth-child(3) {
+.draw-open .hamburger span:nth-child(3),
+.drawer-open .hamburger span:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
 }
 
@@ -327,7 +427,7 @@ main.content {
     inset: 0 auto 0 0;
     width: 270px;
     max-width: 80%;
-    background: transparent;
+    background: #121214;
     /* alterar cor */
     border-right: 1px solid #27272f;
     /* alterar cor */
@@ -336,13 +436,16 @@ main.content {
     transform: translateX(-100%);
     transition: transform 0.4s cubic-bezier(0.5, 0.15, 0.25, 0.9);
     z-index: 90;
+    will-change: transform;
+    scrollbar-color: #27272f;
+    /* alterar cor */
 }
 
 .drawer-nav h2.drawer-heading {
     font-size: 0.72rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: transparent;
+    color: #ff1f7d;
     /* alterar cor */
     margin: 1rem 0 0.4rem;
 }
@@ -369,7 +472,7 @@ body.draw-open #sideMenu {
     transform: translateX(0);
 }
 
-body.drawer-open .drawer{
+body.drawer-open .drawer {
     transform: translateX(0);
 }
 
@@ -426,13 +529,15 @@ body.drawer-open::before {
 }
 
 .search:focus-visible {
-    outline: 2px solid #ff1f7d; /* alterar cor */
+    outline: 2px solid #ff1f7d;
+    /* alterar cor */
     outline-offset: 2px;
 }
 
 
 .hamburger:focus-visible {
-    outline: 2px solid #ff1f7d; /* alterar cor */
+    outline: 2px solid #ff1f7d;
+    /* alterar cor */
     outline-offset: 2px;
     border-radius: 6px;
 }
@@ -455,7 +560,22 @@ body.drawer-open::before {
         width: 100%;
         height: 140px;
     }
+
+    .course-status {
+        align-items: stretch;
+        min-width: unset;
+        width: 100%;
+    }
+
+    .course-progress {
+        width: 100%;
+    }
+
+    .course-progress .progress-label {
+        text-align: left;
+    }
 }
+
 
 @media (prefers-reduced-motion: reduce) {
     * {
