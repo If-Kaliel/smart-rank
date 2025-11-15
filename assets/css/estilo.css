@@ -35,6 +35,12 @@ a:hover {
     text-decoration: underline;
 }
 
+a:focus-visible, .btn:focus-visible, .top-link:focus-visible, .drawer-section ul li a:focus-visible {
+    outline: 2px solid #ff1f7d; /* alterar cor */
+    outline-offset: 2px;
+    border-radius: 6px;
+}
+
 ul {
     list-style: none;
 }
@@ -210,14 +216,13 @@ main.content {
     background: #1a1a1a;
     text-align: center;
     border-radius: 14px;
-    /* ← arredonda o card */
 }
 
 
 
 .report-card .btn {
     margin-top: auto;
-    align-self: flex-start;
+    align-self: center;
     background: #ff1f7d;
     color: white;
     border: none;
@@ -227,16 +232,16 @@ main.content {
     border-radius: 5px;
 }
 
-/* .btn {
-    margin-top: 5rem;
-    background: #ff1f7d;
-    color: white;
-    border: none;
-    padding: 0.6rem 1rem;
-    font-size: 0.8rem;
-    letter-spacing: 0.5px;
-    border-radius: 5px;
-} */
+.btn {
+  cursor: pointer;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+}
 
 
 .btn:hover {
@@ -375,7 +380,7 @@ body.drawer-open::before {
     /* alterar cor */
     border-top: 1px solid #27272f;
     /* alterar cor */
-    color: #555555;
+    color: #fff;
     /* alterar cor */
 }
 
@@ -403,6 +408,9 @@ body.drawer-open::before {
     margin-bottom: 20px;
     margin-top: 5px;
     padding: 5px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 
