@@ -12,12 +12,14 @@ html {
 body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: white;
-    background-color: darkblue;
-    background-size: cover;
     min-height: 100dvh;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
+      background-image: url("/assets/img/background.jpg"); 
+     background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed; 
 }
 
 
@@ -25,12 +27,17 @@ img {
     max-width: 100%;
     display: block;
     height: auto;
+    
+}
+
+img class="hero-img" {
+   /* Tentei alinhar a imagem hero da index mas dx pra depois.*/
 }
 
 h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    text-align: left;
+    text-align: center;
 }
 
 a {
@@ -298,6 +305,7 @@ main.content {
     font-size: 1.4rem;
     font-weight: 600;
     margin-top: .35rem;
+    text-align: center;
     color: #ff1f7d;
     /* alterar cor */
 }

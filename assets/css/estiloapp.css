@@ -9,7 +9,10 @@ body {
     height: 100%;
     -moz-osx-font-smoothing: grayscale;
     color:#ffffff;
-    background: #7a9ab4;
+      background-image: url("/assets/img/background.jpg"); 
+     background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed; 
 }
 
 
