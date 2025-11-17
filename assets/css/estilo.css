@@ -127,7 +127,7 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     margin-left: -50vw;
     margin-right: -50vw;
     padding: 4rem 2rem;
-    background: url("/assets/img/futurorh.jpg") center/cover no-repeat;
+    background: linear-gradient(135deg, #011526, #0367A6);
     color: #fff;
     text-align: center;
     overflow: hidden;
@@ -144,6 +144,7 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(1,21,38,0.9), rgba(3,103,166,0.8));
+    backdrop-filter: blur(1px);
     z-index: 1;
 }
 
@@ -156,13 +157,15 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
 .hero h1 {
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     margin-bottom: 1rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero .lead {
     font-size: clamp(1rem, 2.5vw, 1.25rem);
     margin-bottom: 2rem;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    margin-inline: auto;
 }
 
 .hero .cta {
@@ -201,6 +204,11 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
 .hero-highlight p {
     font-size: clamp(1rem, 2vw, 1.2rem);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-highlight h2 {
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    margin-bottom: 0.6rem;
 }
 
 
