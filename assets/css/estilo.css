@@ -890,6 +890,11 @@ body.drawer-open::before {
     border: 1px solid #27272f;
 }
 
+.site-footer {
+    background: #011526;
+    border-top: 1px solid #27272f;
+}
+
 @media (max-width: 780px) {
     .top-actions {
         display: none;
