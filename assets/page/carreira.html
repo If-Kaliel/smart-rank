@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Carreira</title>
     <link rel="stylesheet" href="../css/estilo.css">
     <script src="../js/script.js" defer></script>
 </head>
-
 <body class="layout">
     <header class="topbar">
-        <button class="hamburger" id="menuToggle" aria-label="Abrir menu" aria-controls="sideMenu"
-            aria-expanded="false">
+        <button class="hamburger" id="menuToggle" aria-label="Abrir menu" aria-controls="sideMenu" aria-expanded="false">
             <span></span><span></span><span></span>
         </button>
     </header>
@@ -23,7 +19,7 @@
             <div class="drawer-section">
                 <h2 class="drawer-heading">Navegação</h2>
                 <ul>
-                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/index.html">Início</a></li>
                     <li><a href="./integrantes.html">Equipe</a></li>
                     <li><a href="./sobre.html">Sobre</a></li>
                     <li><a href="./faq.html">FAQ</a></li>
@@ -37,66 +33,122 @@
     </aside>
 
     <main class="content">
+        <div class="sidebar">
         <section class="section">
             <h1>Carreira</h1>
-            <p>Conteúdo de carreira em desenvolvimento.</p>
+            <p>Progresso profissional e benefícios por nível.</p>
         </section>
-    </main>
 
-    <section>
-        <h2>Seu rank atual é: bronze</h2>
-    </section>
+        <section aria-labelledby="current-rank" class="career-current">
+            <h2 id="current-rank">Seu rank atual é: <span class="rank-badge">Bronze</span></h2>
+        </section>
+        </div>
 
         <h2>Lista de classificações:</h2>
 
-    <section>
-        <h3>Bronze (1 mês de empresa)</h3>
-        <p>Benefícios: nenhum</p>
-    </section>
+        <div class="career-tiers" role="list">
+            <article class="tier-card" role="listitem" aria-labelledby="tier-bronze">
+                <div class="tier-icon" aria-hidden="true">
+                    <img src="../img/bronze.jpg" alt="">
+                </div>
+                <div class="tier-body">
+                    <div class="tier-title" id="tier-bronze">Bronze</div>
+                    <div class="tier-desc">Requisito: 1 mês de empresa.</div>
+                    <div class="tier-reward">Benefícios: nenhum</div>
+                </div>
+            </article>
 
-     <section>
-        <h3>Prata (5 meses de empresa)</h3>
-        <p>Benefícios: + R$100 de salário, uma folga em qualquer dia escolhido</p>
-    </section>
+            <article class="tier-card" role="listitem" aria-labelledby="tier-prata">
+                <div class="tier-icon" aria-hidden="true">
+                    <img src="../img/prata.jpg" alt="">
+                </div>
+                <div class="tier-body">
+                    <div class="tier-title" id="tier-prata">Prata</div>
+                    <div class="tier-desc">Requisito: 5 meses de empresa.</div>
+                    <div class="tier-reward">Benefícios: +R$100 e uma folga</div>
+                </div>
+            </article>
 
-    <section>
-        <h3>Ouro (1 ano de empresa)</h3>
-        <p>Benefícios: + R$200 de salário, uma folga em qualquer dia e uma camisa da empresa exclusiva</p>
-    </section>
+            <article class="tier-card" role="listitem" aria-labelledby="tier-ouro">
+                <div class="tier-icon" aria-hidden="true">
+                    <img src="../img/ouro.jpg" alt="">
+                </div>
+                <div class="tier-body">
+                    <div class="tier-title" id="tier-ouro">Ouro</div>
+                    <div class="tier-desc">Requisito: 1 ano na empresa.</div>
+                    <div class="tier-reward">Benefícios: +R$200, uma folga e camisa exclusiva</div>
+                </div>
+            </article>
 
-    <section>
-        <h3>Platina (1 ano e 6 meses de empresa)</h3>
-        <p>Benefícios: + R$300 de salário, uma folga em qualquer dia</p>
-    </section>
+            <article class="tier-card" role="listitem" aria-labelledby="tier-platina">
+                <div class="tier-icon" aria-hidden="true">
+                    <img src="../img/platina.jpg" alt="">
+                </div>
+                <div class="tier-body">
+                    <div class="tier-title" id="tier-platina">Platina</div>
+                    <div class="tier-desc">Requisito: 1 ano e 6 meses.</div>
+                    <div class="tier-reward">Benefícios: +R$300 e uma folga</div>
+                </div>
+            </article>
 
-    <section>
-        <h3>Diamante (2 anos de empresa)</h3>
-        <p>Benefícios: + R$600 de salário, uma folga em qualquer dia e um troféu exclusivo</p>
-    </section>
+            <article class="tier-card" role="listitem" aria-labelledby="tier-diamante">
+                <div class="tier-icon" aria-hidden="true">
+                    <img src="../img/diamante.jpg" alt="">
+                </div>
+                <div class="tier-body">
+                    <div class="tier-title" id="tier-diamante">Diamante</div>
+                    <div class="tier-desc">Requisito: 2 anos.</div>
+                    <div class="tier-reward">Benefícios: +R$600, uma folga e troféu</div>
+                </div>
+            </article>
 
-    <section>
-        <h3>Mestre (2 anos e 6 meses de empresa)</h3>
-        <p>Benefícios: + R$800 de salário, uma folga em qualquer dia e uma viagem paga pela empresa nas férias</p>
-    </section>
+            <article class="tier-card" role="listitem" aria-labelledby="tier-campeao">
+                <div class="tier-icon" aria-hidden="true">
+                    <img src="../img/campeao.jpg" alt="">
+                </div>
+                <div class="tier-body">
+                    <div class="tier-title" id="tier-campeao">Campeão</div>
+                    <div class="tier-desc">Requisito: 2 anos e 6 meses.</div>
+                    <div class="tier-reward">Benefícios: +R$800 e viagem nas férias</div>
+                </div>
+            </article>
 
-    <section>
-        <h3>Imbatível (4 anos de empresa)</h3>
-        <p>Benefícios: + R$1000 de salário</p>
-    </section>
+            <article class="tier-card" role="listitem" aria-labelledby="tier-imbativel">
+                <div class="tier-icon" aria-hidden="true">
+                    <img src="../img/imbativel.jpg" alt="">
+                </div>
+                <div class="tier-body">
+                    <div class="tier-title" id="tier-imbativel">Imbatível</div>
+                    <div class="tier-desc">Requisito: 4 anos.</div>
+                    <div class="tier-reward">Benefícios: +R$1000 e uma folga</div>
+                </div>
+            </article>
 
-     <section>
-        <h3>Imortal (5 anos de empresa)</h3>
-        <p>Benefícios: + R$1500 de salário, adicional de R$200,00 por ano</p>
-    </section>
-
-
-
-
+            <article class="tier-card" role="listitem" aria-labelledby="tier-mestre">
+                <div class="tier-icon" aria-hidden="true">
+                    <img src="../img/mestre.jpg" alt="">
+                </div>
+                <div class="tier-body">
+                    <div class="tier-title" id="tier-mestre">Mestre</div>
+                    <div class="tier-desc">Requisito: 5 anos.</div>
+                    <div class="tier-reward">Benefícios: +R$1300 e uma folga</div>
+                </div>
+            </article>
+              <article class="tier-card" role="listitem" aria-labelledby="tier-imortal">
+                <div class="tier-icon" aria-hidden="true">
+                    <img src="../img/imortal.jpg" alt="">
+                </div>
+                <div class="tier-body">
+                    <div class="tier-title" id="tier-imortal">Imortal</div>
+                    <div class="tier-desc">Requisito: 7 anos.</div>
+                    <div class="tier-reward">Benefícios: +R$1500 + adicional anual de R$200,00</div>
+                </div>
+            </article>
+        </div>
+    </main>
 
     <footer class="site-footer">
-        <p>&copy;Todos os direitos reservados - Smart Rank 2025</p>
+        <p>&copy; Todos os direitos reservados - Smart Rank 2025</p>
     </footer>
-
 </body>
-
 </html>
