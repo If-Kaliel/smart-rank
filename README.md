@@ -1,7 +1,7 @@
-**Descrição, objetivo, proposta, tecnologias, link**
-
 
 # Smart Rank
+
+<img width="300" height="300" alt="Pascal o mascote" src="/assets/img/freepik.jpg" />
 
 ## Descrição
 
@@ -21,10 +21,6 @@ falam mais do que atitudes, o Smart Rank entra como aliado, tanto do patrão com
 #### Proposta 3 - Quem não gosta de recompensas? 
 
   Agora funcionários poderão completar missões que garantem a ele um bônus generoso por suas contribuições. "Ficou sem faltar por um ano inteiro?"... isso é um feito digno de um bônus no décimo terceiro. "Descobriu uma solução mais eficaz para resolver esse problema?"... Alguém merece uma folga extra neste mês. Nossa missão é unir a satisfação do funcionário e patrão, afinal trabalhadores mais felizes são trabalhadores mais produtivos.
-
-
-![Smart Rank project](src="/assets/img/freepik.jpg")
-
 
 ## Funcionalidades
 
