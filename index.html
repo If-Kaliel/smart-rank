@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Smart Rank</title>
   <link rel="stylesheet" href="./assets/css/estilo.css">
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js" defer></script>
 </head>
 
 <body class="layout">
@@ -22,7 +22,7 @@
       <div class="drawer-section">
         <h2 class="drawer-heading">Navegação</h2>
         <ul>
-          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/index.html" aria-current="page">Inicio</a></li>
           <li><a href="./assets/page/integrantes.html">Equipe</a></li>
           <li><a href="./assets/page/sobre.html">Sobre</a></li>
           <li><a href="./assets/page/faq.html">FAQ</a></li>
@@ -36,16 +36,20 @@
   </aside>
 
   <main class="content">
-    <div>
-      <section class="hero">
+    <section class="hero">
+      <div class="hero-content">
         <h1>Bem vindos ao Smart Rank</h1>
         <p class="lead">O Smart Rank é um sistema de treinamento desenvolvido para inovar a integração dos seus colaboradores.</p>
-        <img src="/assets/img/futurorh.jpg" alt="SR" class="hero-img">
-        <div class="section">
-          <h2 class="strong">Soluções Integradas</h2>
-          <p>Treine colaboradores, permite que monitorem seu progresso de carreira e muito mais!</p>
-        </div>  
-      </section>
+        <div class="cta">
+          <a class="btn primary" href="./assets/page/cursos.html">Explorar cursos</a>
+          <a class="btn" href="./assets/page/contato.html">Fale com o RH</a>
+        </div>
+      </div>
+      <div class="hero-highlight">
+        <h2 class="strong">Soluções Integradas</h2>
+        <p>Treine colaboradores, permita que monitorem seu progresso de carreira e muito mais!</p>
+      </div>
+    </section>
     </div>
     <aside class="sidebar">
       <h2 class="strong">Principais Recursos</h2>
