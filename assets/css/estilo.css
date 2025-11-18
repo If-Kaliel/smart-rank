@@ -4,7 +4,7 @@
     --steel-blue: #0367A6;
     --prussian-blue: #023859;
     --pacific-blue: #049DBF;
-    --gradient-primary: linear-gradient(360deg, var(--steel-blue), var(--rich-black) );
+    --gradient-primary: linear-gradient(360deg, var(--steel-blue), var(--rich-black));
     --border-subtle: #27272f
 }
 
@@ -63,7 +63,6 @@ a:focus-visible,
 .top-link:focus-visible,
 .drawer-section ul li a:focus-visible {
     outline: 2px solid #023859;
-    /* alterar cor */
     outline-offset: 2px;
     border-radius: 6px;
 }
@@ -79,7 +78,8 @@ main.content {
     padding: 1.5rem 1rem 4rem;
 }
 
-button.primary, .btn.primary {
+button.primary,
+.btn.primary {
     display: block;
     width: 100%;
     padding: 0.75rem 1rem;
@@ -96,16 +96,22 @@ button.primary, .btn.primary {
     transition: background 0.25s ease, filter 0.15s ease;
 }
 
-button.primary:hover, .btn.primary:hover, .btn.primary:hover {
+button.primary:hover,
+.btn.primary:hover,
+.btn.primary:hover {
     background: var(--gradient-primary)
 }
 
-button.primary:focus-visible, .btn.primary:focus-visible, .btn.primary:focus-visible {
+button.primary:focus-visible,
+.btn.primary:focus-visible,
+.btn.primary:focus-visible {
     outline: 2px solid #023859;
     outline-offset: 2px;
 }
 
-button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
+button.primary:disabled,
+.btn.primary:disabled,
+.btn.primary:disabled {
     background: linear-gradient(360deg, #0367A6, #011526);
     color: #fff !important;
     opacity: 1 !important;
@@ -118,8 +124,6 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     background: transparent;
 }
 
-
-/* O que caralhos aconteceu aqui nesse hero? */
 
 .hero {
     position: relative;
@@ -146,12 +150,13 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(1,21,38,0.9), rgba(3,103,166,0.8));
+    background: linear-gradient(135deg, rgba(1, 21, 38, 0.9), rgba(3, 103, 166, 0.8));
     backdrop-filter: blur(1px);
     z-index: 1;
 }
 
-.hero-content, .hero-highlight {
+.hero-content,
+.hero-highlight {
     position: relative;
     z-index: 2;
     max-width: 800px;
@@ -201,7 +206,7 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
 .hero-highlight {
     margin-top: 1.5rem;
     padding-top: 1.5rem;
-    border-top: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .hero-highlight p {
@@ -233,7 +238,6 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     padding: 0.25rem 0;
     font-size: 1rem;
     color: #fff;
-    /* alterar cor */
 }
 
 .section h2.strong {
@@ -242,7 +246,7 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
 
 }
 
-.section > h2 {
+.section>h2 {
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -276,11 +280,11 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
 
 .membro img {
     width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid rgba(255,255,255,.08);
-  box-shadow: 0 2px 14px rgba(0,0,0,.25);
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, .08);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, .25);
 }
 
 .membro h3 {
@@ -288,7 +292,12 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     font-size: 1.1rem;
 }
 
-.membro, .feature.card-sm, .course-card, .stat-card, .report-card, .sidebar {
+.membro,
+.feature.card-sm,
+.course-card,
+.stat-card,
+.report-card,
+.sidebar {
     background: var(--gradient-primary)
 }
 
@@ -307,22 +316,22 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
 }
 
 .social a {
-     display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: .35rem .75rem;
-  border-radius: 999px;
-  border: 1px solid #27272f;
-  color: #fff;
-  text-decoration: none;
-  font-size: .85rem;
-  letter-spacing: .3px;
-  transition: background .2s ease, color .2s ease, border-color .2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .35rem .75rem;
+    border-radius: 999px;
+    border: 1px solid #27272f;
+    color: #fff;
+    text-decoration: none;
+    font-size: .85rem;
+    letter-spacing: .3px;
+    transition: background .2s ease, color .2s ease, border-color .2s ease;
 }
 
 .social a:hover {
     background: var(--gradient-primary);
-    color: var(--pacific-blue) ;
+    color: var(--pacific-blue);
     border-color: var(--prussian-blue);
 }
 
@@ -449,7 +458,6 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     background: linear-gradient(360deg, #0367A6, #011526);
     padding: 1rem;
     border: 1px solid #27272f;
-    /* alterar cor */
     border-radius: 10px;
 }
 
@@ -508,7 +516,6 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
 .course-progress .progress-label {
     font-size: 0.7rem;
     color: #fff;
-    /* alterar cor */
     text-align: right;
     margin-bottom: 0.25rem;
 }
@@ -517,7 +524,6 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     position: relative;
     height: 8px;
     background: lightblue;
-    /* alterar cor */
     border-radius: 999px;
     overflow: hidden;
 }
@@ -526,14 +532,12 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     height: 100%;
     width: var(--progress, 0%);
     background: darkblue;
-    /* alterar cor */
     border-radius: inherit;
     transition: width 0.4s ease;
 }
 
 .course-card:hover {
     border-color: #fff;
-    /* alterar cor */
 }
 
 
@@ -612,7 +616,6 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     margin-top: .35rem;
     text-align: center;
     color: #fff;
-    /* alterar cor */
 }
 
 .report-list {
@@ -627,7 +630,6 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     flex-direction: column;
     gap: 0.5rem;
     background: linear-gradient(360deg, #0367A6, #011526);
-    /* alterar cor */
     text-align: center;
     border-radius: 14px;
 }
@@ -735,8 +737,6 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     height: 3px;
     width: 100%;
     background: currentColor;
-    ;
-    /* alterar cor */
     display: block;
     border-radius: 3px;
     transition: 0.4s cubic-bezier(0.5, 0.15, 0.25, 0.9), opacity 0.4s cubic-bezier(0.5, 0.15, 0.25, 0.9);
@@ -764,9 +764,7 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     width: 270px;
     max-width: 80%;
     background: #011526;
-    /* alterar cor */
     border-right: 1px solid #27272f;
-    /* alterar cor */
     padding: 1rem 1rem 2.5rem;
     overflow-y: auto;
     transform: translateX(-100%);
@@ -774,7 +772,6 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     z-index: 90;
     will-change: transform;
     scrollbar-color: #fff;
-    /* alterar cor */
 }
 
 .drawer-nav h2.drawer-heading {
@@ -782,7 +779,6 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #ff1f7d;
-    /* alterar cor */
     margin: 1rem 0 0.4rem;
 }
 
@@ -793,15 +789,12 @@ button.primary:disabled, .btn.primary:disabled, .btn.primary:disabled {
     font-size: 0.85rem;
     font-weight: 500;
     color: #fff;
-    /* alterar cor */
     transition: background 0.25s, color 0.25s;
 }
 
 .drawer-section ul li a:hover {
     background: var(--gradient-primary);
-    /* alterar cor */
     color: #049DBF;
-    /* alterar cor */
 }
 
 body.draw-open #sideMenu {
@@ -817,7 +810,6 @@ body.drawer-open::before {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
-    /* alterar cor */
     z-index: 80;
 }
 
@@ -828,9 +820,7 @@ body.drawer-open::before {
     font-size: 0.7rem;
     letter-spacing: 0.5px;
     text-align: center;
-    /* alterar cor */
     color: #fff;
-    /* alterar cor */
 }
 
 .drawer::-webkit-scrollbar {
@@ -839,18 +829,15 @@ body.drawer-open::before {
 
 .drawer::-webkit-scrollbar-track {
     background: transparent;
-    /* alterar cor */
 }
 
 .drawer::-webkit-scrollbar-thumb {
     background: #27272f;
-    /* alterar cor */
     border-radius: 4px;
 }
 
 .drawer::-webkit-scrollbar-thumb:hover {
     background: var(--gradient-primary);
-    /* alterar cor */
 }
 
 .search {
@@ -864,14 +851,12 @@ body.drawer-open::before {
 
 .search:focus-visible {
     outline: 2px solid #023859;
-    /* alterar cor */
     outline-offset: 2px;
 }
 
 
 .hamburger:focus-visible {
     outline: 2px solid #023859;
-    /* alterar cor */
     outline-offset: 2px;
     border-radius: 6px;
 }
@@ -924,7 +909,7 @@ body.drawer-open::before {
     background: linear-gradient(135deg, #0367A6 60%, #011526 100%);
     border: 2px solid #049DBF;
     border-radius: 18px;
-    box-shadow: 0 6px 24px rgba(4,104,191,0.13);
+    box-shadow: 0 6px 24px rgba(4, 104, 191, 0.13);
     padding: 2rem 1.2rem 1.2rem 1.2rem;
     display: flex;
     flex-direction: column;
@@ -937,7 +922,7 @@ body.drawer-open::before {
 
 .achievement-card:hover {
     transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 12px 32px rgba(4,104,191,0.22);
+    box-shadow: 0 12px 32px rgba(4, 104, 191, 0.22);
     border-color: #ffdd57;
 }
 
@@ -950,7 +935,7 @@ body.drawer-open::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 12px rgba(4,104,191,0.10);
+    box-shadow: 0 2px 12px rgba(4, 104, 191, 0.10);
     overflow: hidden;
 }
 
@@ -994,37 +979,36 @@ body.drawer-open::before {
     letter-spacing: 0.5px;
     background: #fff;
     color: #0367A6;
-    box-shadow: 0 2px 8px rgba(4,104,191,0.09);
+    box-shadow: 0 2px 8px rgba(4, 104, 191, 0.09);
     border: 1px solid #049DBF;
 }
 
 
-main.content > .achievements-grid {
+main.content>.achievements-grid {
     margin-left: auto;
     margin-right: auto;
 }
 
-main.content > section {
+main.content>section {
     margin-bottom: 0;
     background: transparent;
 }
 
 /*PAGINA CARREIRA*/
 
-main.content + section {
-    /* caixa do rank atual (logo após main.content) */
+main.content+section {
     max-width: 900px;
     margin: 1rem auto;
     padding: 1rem 1.25rem;
-    background: linear-gradient(180deg, rgba(3,103,166,0.14), rgba(1,21,38,0.08));
+    background: linear-gradient(180deg, rgba(3, 103, 166, 0.14), rgba(1, 21, 38, 0.08));
     border: 1px solid var(--border-subtle);
     border-radius: 12px;
     color: #fff;
     text-align: center;
-    box-shadow: 0 8px 30px rgba(1,21,38,0.25);
+    box-shadow: 0 8px 30px rgba(1, 21, 38, 0.25);
 }
 
-main.content + section h2 {
+main.content+section h2 {
     margin: 0;
     font-size: 1.15rem;
     font-weight: 700;
@@ -1032,8 +1016,7 @@ main.content + section h2 {
     color: var(--blue-ribbon);
 }
 
-/* Cabeçalho "Lista de classificações" — normalmente aparece após a caixa de rank */
-main.content ~ h2 {
+main.content~h2 {
     max-width: 900px;
     margin: 1.25rem auto 0.5rem;
     text-align: center;
@@ -1042,12 +1025,11 @@ main.content ~ h2 {
     font-weight: 700;
 }
 
-/* Cada nível/tier apresentado em uma "caixa" consistente */
-main.content ~ section {
+main.content~section {
     max-width: 900px;
     margin: 0.6rem auto;
     padding: 0.9rem 1rem;
-    background: linear-gradient(180deg, rgba(3,103,166,0.12), rgba(1,21,38,0.12));
+    background: linear-gradient(180deg, rgba(3, 103, 166, 0.12), rgba(1, 21, 38, 0.12));
     border: 1px solid var(--border-subtle);
     border-radius: 12px;
     color: #fff;
@@ -1057,31 +1039,24 @@ main.content ~ section {
     justify-content: space-between;
 }
 
-/* se o conteúdo do section for simples (h3 + p), centraliza e empilha */
-main.content ~ section h3,
-main.content ~ section p {
+main.content~section h3,
+main.content~section p {
     margin: 0;
 }
 
-/* título do tier */
-main.content ~ section h3 {
+main.content~section h3 {
     font-size: 1.05rem;
     font-weight: 800;
     color: var(--pacific-blue);
     text-align: left;
 }
 
-/* descrição / benefícios */
-main.content ~ section p {
+main.content~section p {
     color: #e6f6ff;
     font-size: 0.95rem;
     text-align: right;
 }
 
-/* versão empilhada para telas pequenas */
-
-
-/* Opcional: grid de tiers se quiser agrupar visualmente (adicione wrapper .career-tiers) */
 .career-tiers {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -1100,21 +1075,20 @@ main.content ~ section p {
     display: flex;
     gap: 0.8rem;
     align-items: center;
-    box-shadow: 0 6px 18px rgba(1,21,38,0.18);
+    box-shadow: 0 6px 18px rgba(1, 21, 38, 0.18);
     transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
 }
 
-/* ícone 2D dentro do card (use <div class="tier-icon"><img/></div>) */
 .tier-icon {
     width: 64px;
     height: 64px;
     min-width: 64px;
     border-radius: 10px;
-    background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.9));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
     overflow: hidden;
 }
 
@@ -1124,7 +1098,6 @@ main.content ~ section p {
     object-fit: contain;
 }
 
-/* conteúdo textual do card */
 .tier-body {
     flex: 1;
     display: flex;
@@ -1143,7 +1116,7 @@ main.content ~ section p {
     color: #e6f6ff;
 }
 
-/* recompensa / benefícios destacados */
+
 .tier-reward {
     font-weight: 700;
     color: #0bb822;
@@ -1151,22 +1124,20 @@ main.content ~ section p {
     margin-top: 0.35rem;
 }
 
-/* hover */
+
 .tier-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 14px 32px rgba(1,21,38,0.28);
+    box-shadow: 0 14px 32px rgba(1, 21, 38, 0.28);
     border-color: var(--pacific-blue);
 }
 
-/* foco para acessibilidade */
-main.content + section:focus-within,
-main.content ~ section:focus-within,
+main.content+section:focus-within,
+main.content~section:focus-within,
 .tier-card:focus-within {
-    outline: 3px solid rgba(2,56,89,0.12);
+    outline: 3px solid rgba(2, 56, 89, 0.12);
     outline-offset: 4px;
 }
 
-/* utilitários pequenos */
 .rank-badge {
     display: inline-block;
     padding: 0.35rem 0.6rem;
@@ -1179,12 +1150,87 @@ main.content ~ section:focus-within,
     font-size: 0.8rem;
 }
 
-/* Mobile tweaks */
+.faq-section {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2.5rem;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.faq-content h1 {
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    margin-bottom: 1.5rem;
+    color: var(--pacific-blue);
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item h3 {
+    font-size: clamp(1.1rem, 2.2vw, 1.2rem);
+    margin-bottom: 0.5rem;
+    color: #fff;
+    text-align: left;
+    font-weight: 600;
+}
+
+.faq-item p {
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
+    color: #fff;
+    line-height: 1.5;
+}
+
+.faq-media {
+    position: sticky;
+    top: 80px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(135deg, var(--steel-blue), var(--rich-black));
+}
+
+.faq-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.faq-media:hover img {
+    transform: scale(1.05);
+}
+
 @media (max-width: 420px) {
-    .tier-icon { width: 56px; height: 56px; min-width: 56px; }
-    .tier-icon img { width: 40px; height: 40px; }
-    .tier-title { font-size: 0.98rem; }
-    .tier-reward { font-size: 0.9rem; }
+    .tier-icon {
+        width: 56px;
+        height: 56px;
+        min-width: 56px;
+    }
+
+    .tier-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tier-title {
+        font-size: 0.98rem;
+    }
+
+    .tier-reward {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 780px) {
@@ -1211,18 +1257,19 @@ main.content ~ section:focus-within,
         align-items: flex-start;
         gap: 0.6rem;
     }
-    
+
     .achievements-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         padding: 0 0.5rem;
     }
+
     .achievement-card {
         min-height: 260px;
         padding: 1.2rem 0.7rem 1rem 0.7rem;
     }
 
-    
+
 
     .course-status .status,
     .course-status .start-test-btn {
@@ -1282,5 +1329,18 @@ main.content ~ section:focus-within,
         flex-direction: column;
         align-items: center;
     }
-}
 
+    .faq-section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .faq-media {
+        position: relative;
+        top: 0;
+        order: -1;
+        aspect-ratio: 16 / 10;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
