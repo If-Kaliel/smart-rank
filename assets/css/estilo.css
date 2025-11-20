@@ -1243,6 +1243,119 @@ main.content~section:focus-within,
     transform: scale(1.05);
 }
 
+
+.problem-solution {
+  margin-top: 3rem;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.problem-card,
+.solution-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.problem-card h3 {
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.solution-card h3 {
+  color: var(--pacific-blue);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.problem-card ul,
+.solution-card ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+
+.problem-card li,
+.solution-card li {
+  margin-bottom: 0.5rem;
+}
+
+.impact-metrics {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--midnight-blue), var(--prussian-blue));
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.impact-metrics h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.metrics-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 150px;
+}
+
+.metric-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--pacific-blue);
+  line-height: 1;
+  text-shadow: 0 2px 8px rgba(4, 157, 191, 0.3);
+}
+
+.metric-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .problem-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .problem-card,
+  .solution-card {
+    padding: 1.25rem;
+  }
+
+  .metric-value {
+    font-size: 2rem;
+  }
+
+  .metrics-row {
+    gap: 1.5rem;
+  }
+}
+
+
+
 @media (max-width: 420px) {
     .tier-icon {
         width: 56px;
