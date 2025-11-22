@@ -149,7 +149,10 @@ button.primary:disabled,
 .hero::before {
     content: "";
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
     background: radial-gradient(circle at 30% 40%, rgba(4, 157, 191, 0.15), transparent 60%), radial-gradient(circle at 70% 60%, rgba(4, 104, 191, 0.12), transparent 50%);
     backdrop-filter: blur(1px);
     z-index: 1;
@@ -274,13 +277,23 @@ button.primary:disabled,
 .section h2.strong {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-
+    text-align: center;
 }
 
 .section>h2 {
     text-align: center;
     margin-bottom: 1rem;
 }
+
+.section-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+    margin: 0;
+    padding: 0;
+}   
 
 /*PAGINA DE EQUIPE*/
 
@@ -1054,6 +1067,9 @@ main.content~h2 {
     color: #fff;
     font-size: 1.1rem;
     font-weight: 700;
+    padding: 0 1rem;
+    width: 100%;
+    display: block;
 }
 
 main.content~section {
@@ -1245,113 +1261,113 @@ main.content~section:focus-within,
 
 
 .problem-solution {
-  margin-top: 3rem;
+    margin-top: 3rem;
 }
 
 .problem-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
 .problem-card,
 .solution-card {
-  padding: 1.5rem;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 .problem-card h3 {
-  color: #ff6b6b;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
 }
 
 .solution-card h3 {
-  color: var(--pacific-blue);
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
+    color: var(--pacific-blue);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
 }
 
 .problem-card ul,
 .solution-card ul {
-  margin-top: 1rem;
-  padding-left: 1.5rem;
-  line-height: 1.8;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    line-height: 1.8;
 }
 
 .problem-card li,
 .solution-card li {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .impact-metrics {
-  margin-top: 2rem;
-  padding: 2rem;
-  background: linear-gradient(135deg, var(--midnight-blue), var(--prussian-blue));
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--midnight-blue), var(--prussian-blue));
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .impact-metrics h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
 }
 
 .metrics-row {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
 }
 
 .metric {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
 }
 
 .metric-value {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: var(--pacific-blue);
-  line-height: 1;
-  text-shadow: 0 2px 8px rgba(4, 157, 191, 0.3);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--pacific-blue);
+    line-height: 1;
+    text-shadow: 0 2px 8px rgba(4, 157, 191, 0.3);
 }
 
 .metric-label {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
-  margin-top: 0.5rem;
-  text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 0.5rem;
+    text-align: center;
 }
 
 
 @media (max-width: 768px) {
-  .problem-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
+    .problem-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 
-  .problem-card,
-  .solution-card {
-    padding: 1.25rem;
-  }
+    .problem-card,
+    .solution-card {
+        padding: 1.25rem;
+    }
 
-  .metric-value {
-    font-size: 2rem;
-  }
+    .metric-value {
+        font-size: 2rem;
+    }
 
-  .metrics-row {
-    gap: 1.5rem;
-  }
+    .metrics-row {
+        gap: 1.5rem;
+    }
 }
 
 
@@ -1479,9 +1495,10 @@ main.content~section:focus-within,
         align-items: stretch;
         width: 100%;
         max-width: 400px;
+        margin: 0 auto;
     }
 
-        .hero .cta .btn {
+    .hero .cta .btn {
         width: 100%;
     }
 
@@ -1490,7 +1507,7 @@ main.content~section:focus-within,
     }
 
 
-  .faq-section {
+    .faq-section {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
@@ -1503,17 +1520,31 @@ main.content~section:focus-within,
         max-width: 500px;
         margin: 0 auto;
     }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .feature.card-sm {
+        width: 100%;
+        max-width: 400px;
+    }
 }
+
+
 @media (min-width: 768px) and (max-width: 991px) {
     .hero {
         padding: 4.5rem 2rem;
         min-height: 65vh;
     }
-    
+
     .features {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .cards-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1523,39 +1554,66 @@ main.content~section:focus-within,
     html {
         font-size: 14px;
     }
-    
+
     .hero h1 {
         font-size: clamp(1.8rem, 8vw, 2.5rem);
     }
-    
+
     .hero .lead {
         font-size: clamp(0.95rem, 4vw, 1.1rem);
     }
-    
+
     .hamburger {
         width: 38px;
         height: 30px;
     }
 }
 
+
 @media (min-width: 1300px) {
     main.content {
         max-width: 1400px;
         padding: 2rem 2rem 4rem;
     }
-    
+
     .hero {
         min-height: 75vh;
         padding: 6rem 2rem;
     }
-    
+
     .features,
     .cards-grid {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .features.card-sm {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    main.content~section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    main.content~section>div {
+        width: 100%;
+        max-width: 400px;
+    }
 }
 
+
 @media (hover: none) and (pointer: coarse) {
+
     .btn,
     .hamburger,
     .drawer-section ul li a {
@@ -1564,7 +1622,8 @@ main.content~section:focus-within,
     }
 }
 
-body, html {
+body,
+html {
     overflow-x: hidden;
     max-width: 100vw;
 }

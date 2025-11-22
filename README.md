@@ -1,6 +1,6 @@
 # Starbound Rank
 
-<img width="300" height="300" alt="Pascal o mascote" src="/assets/img/freepik.jpg" />
+<img width="300" height="300" alt="Logo" src="/assets/img/freepik.jpg" />
 
 ## 📖 Descrição do Projeto
 
